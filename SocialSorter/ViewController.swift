@@ -34,9 +34,9 @@ class ViewController: UIViewController {
         let twitterLogo = UIImage(named: "twitterLogo")
         let facebookLogo = UIImage(named: "facebookLogo")
         // Set the images to the buttons
-        instagramButton.setImage(instagramLogo)
-        twitterButton.setImage(twitterLogo)
-        facebookButton.setImage(facebookLogo)
+        instagramButton.setImage(instagramLogo, for: UIControlState.normal)
+        twitterButton.setImage(#imageLiteral(resourceName: "twitterLogo"), for: UIControlState.normal)
+        facebookButton.setImage(facebookLogo, for: UIControlState.normal)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
